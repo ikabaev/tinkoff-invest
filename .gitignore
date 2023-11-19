@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/tinkoff-invest/obj
+/tinkoff-invest/bin
+/Tinkoff.Services.Test/bin/Debug/net8.0
+/Tinkoff.Services.Test/obj
+/TinkoffUnvestService/bin/Debug/net8.0
+/TinkoffUnvestService/obj
