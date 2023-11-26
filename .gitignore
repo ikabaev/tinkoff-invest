@@ -3,9 +3,10 @@
 ################################################################################
 
 /.vs
-/tinkoff-invest/obj
-/tinkoff-invest/bin
-/Tinkoff.Services.Test/bin
-/Tinkoff.Services.Test/obj
-/TinkoffUnvestService/bin
-/TinkoffUnvestService/obj
+/Invest.App/bin
+/Invest.App/obj
+/Invest.Services/bin
+/Invest.Services/obj
+/Invest.Services.Test/bin
+/Invest.Services.Test/obj
+/TinkoffInvestService/obj
