@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.App", "Invest.App\Invest.App.csproj", "{F090B285-3BFD-4516-9FEC-7993DCFEE2D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.App", "tinkoff-invest\Invest.App.csproj", "{F090B285-3BFD-4516-9FEC-7993DCFEE2D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services", "Invest.Services\Invest.Services.csproj", "{F2855774-FE90-4869-9057-244189428A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services", "TinkoffInvestService\Invest.Services.csproj", "{F2855774-FE90-4869-9057-244189428A0F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Test", "Invest.Services.Test\Invest.Services.Test.csproj", "{6834AE71-6B21-4D40-B366-4355D8CD37C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Test", "Tinkoff.Services.Test\Invest.Services.Test.csproj", "{6834AE71-6B21-4D40-B366-4355D8CD37C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

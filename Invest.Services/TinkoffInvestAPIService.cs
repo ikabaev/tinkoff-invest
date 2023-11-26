@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Tinkoff.InvestApi;
 
-namespace InvestAPI.Services
+namespace Invest.Services
 {
     public class TinkoffInvestAPIService: BackgroundService
     {

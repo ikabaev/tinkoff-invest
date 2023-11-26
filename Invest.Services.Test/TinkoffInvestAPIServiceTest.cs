@@ -1,4 +1,4 @@
-namespace InvestAPI.Services.Test
+namespace Invest.Services.Test
 {
     public class TinkoffInvestAPIServiceTest
     {
