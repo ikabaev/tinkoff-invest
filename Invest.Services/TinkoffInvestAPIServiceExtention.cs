@@ -5,7 +5,7 @@ namespace Invest.Services
 {
     static public class TinkoffInvestAPIServiceExtention
     {
-        public static string accessToke { get; set; }
-        public static TinkoffInvestHistoryClient HistoryData(this InvestApiClient service) => new(accessToke);
+        public static string accessToken { get; set; }
+        public static TinkoffInvestHistoryClient HistoryData(this InvestApiClient service) => new(accessToken);
     }
 }
