@@ -14,9 +14,10 @@ var host = builder
         context.Configuration.Bind(settings);
         foreach(var setting in settings.Providers)
         {
-            var provider = ProviderFactory.Create(setting);
+            var investProvider = ProviderFactory.Create(setting);
 
             services
+                .AddSingleton(investProvider)
                 .AddHostedService<InvestBackgroundService>();
                 //.AddInvestApiClient(setting.AppName ?? $"{Guid.NewGuid()}", (_, settings) =>
                 //{
@@ -31,7 +32,3 @@ var host = builder
     .Build();
     
 await host.RunAsync();
-
-// TODO: +добавить в секрет боевой токен
-// TODO: +хранить в секретах нескольео токенов
-// TODO: +используя список figi последовательно загрузить

@@ -4,7 +4,7 @@ using Tinkoff.InvestApi;
 
 namespace Invest.Services
 {
-    public class TinkoffInvestAPIService(ILogger<TinkoffInvestAPIService> logger, InvestApiClient investApi, IHostApplicationLifetime lifetime) : BackgroundService
+    public class TinkoffInvestAPIService(ILogger<TinkoffInvestAPIService> logger, InvestApiClient investApi) : BackgroundService
     {
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {

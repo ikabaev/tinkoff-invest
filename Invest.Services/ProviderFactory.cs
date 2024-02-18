@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Invest.Services.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace Invest.Services
 {
     public static class ProviderFactory
     {
-        public static InvestProviderBase Create(IConfigurationSection settings) 
+        public static IInvestProvider Create(IConfigurationSection settings) 
         {
             var type = settings["type"];
             if (type == "TinkoffInvest")
