@@ -11,10 +11,10 @@ namespace Invest.Services
     {
         async protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            logger.LogDebug("service {investApi} starting...", nameof(investApi));
+            
             var _invest = investApi as TinkoffInvestProvider ?? throw new ArgumentException("investApi is not TinkoffInvestProvider");
-            //var h = investApi.GetHashCode();
-            //logger.LogInformation("OK {h}", h);
-
+            
             var stream = _invest.Api.MarketDataStream.MarketDataStream(cancellationToken: stoppingToken);
             // Отправляем запрос в стрим
             await stream.RequestStream.WriteAsync(new MarketDataRequest

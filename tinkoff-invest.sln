@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services", "Invest.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Test", "Invest.Services.Test\Invest.Services.Test.csproj", "{6834AE71-6B21-4D40-B366-4355D8CD37C3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Quotes", "Invest.Services.Quotes\Invest.Services.Quotes.csproj", "{0A437506-3F52-4FA1-A961-8DB81891FF13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.Services", "Tinkoff.Invest.Services\Tinkoff.Invest.Services.csproj", "{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6834AE71-6B21-4D40-B366-4355D8CD37C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6834AE71-6B21-4D40-B366-4355D8CD37C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6834AE71-6B21-4D40-B366-4355D8CD37C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A437506-3F52-4FA1-A961-8DB81891FF13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A437506-3F52-4FA1-A961-8DB81891FF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A437506-3F52-4FA1-A961-8DB81891FF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A437506-3F52-4FA1-A961-8DB81891FF13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,16 @@
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\bin\Debug\net8.0\Tinkoff.Invest.Services.deps.json
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\bin\Debug\net8.0\Tinkoff.Invest.Services.dll
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\bin\Debug\net8.0\Tinkoff.Invest.Services.pdb
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\bin\Debug\net8.0\Invest.Services.dll
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\bin\Debug\net8.0\Invest.Services.pdb
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.csproj.AssemblyReference.cache
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.AssemblyInfoInputs.cache
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.AssemblyInfo.cs
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.csproj.CoreCompileInputs.cache
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.sourcelink.json
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff..76436AB0.Up2Date
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.dll
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\refint\Tinkoff.Invest.Services.dll
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\Tinkoff.Invest.Services.pdb
+C:\dev\tinkoff-invest\Tinkoff.Invest.Services\obj\Debug\net8.0\ref\Tinkoff.Invest.Services.dll
