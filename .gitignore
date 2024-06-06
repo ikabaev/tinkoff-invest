@@ -10,3 +10,7 @@
 /Invest.Services.Test/bin
 /Invest.Services.Test/obj
 /TinkoffInvestService/obj
+/Invest.Services.Quotes/bin
+/Invest.Services.Quotes/obj
+/Invest.Services.Tinkoff/bin/Debug/net8.0
+/Invest.Services.Tinkoff/obj
