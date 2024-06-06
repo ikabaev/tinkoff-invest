@@ -13,7 +13,7 @@ namespace Invest.Services
         {
             logger.LogDebug("service {investApi} starting...", nameof(investApi));
             
-            var _invest = investApi as TinkoffInvestProvider ?? throw new ArgumentException("investApi is not TinkoffInvestProvider");
+            var _invest = investApi as TinkoffInvestProviderOld ?? throw new ArgumentException("investApi is not TinkoffInvestProvider");
             
             var stream = _invest.Api.MarketDataStream.MarketDataStream(cancellationToken: stoppingToken);
             // Отправляем запрос в стрим

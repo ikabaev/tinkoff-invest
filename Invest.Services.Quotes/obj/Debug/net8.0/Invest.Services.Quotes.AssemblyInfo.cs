@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Invest.Services.Quotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79f25d766098dab6ac03421c38fd698305a70389")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dea546b39861a047ffdae0a6699d91aad5a7b2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Invest.Services.Quotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Invest.Services.Quotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

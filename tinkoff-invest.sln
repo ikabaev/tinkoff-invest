@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Test", "Inv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Quotes", "Invest.Services.Quotes\Invest.Services.Quotes.csproj", "{0A437506-3F52-4FA1-A961-8DB81891FF13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.Services", "Tinkoff.Invest.Services\Tinkoff.Invest.Services.csproj", "{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Tinkoff", "Invest.Services.Tinkoff\Invest.Services.Tinkoff.csproj", "{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

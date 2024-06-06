@@ -4,9 +4,9 @@ using Tinkoff.InvestApi;
 
 namespace Invest.Services
 {
-    public class TinkoffInvestProvider: InvestProviderBase
+    public class TinkoffInvestProviderOld: InvestProviderBase
     {
-        public TinkoffInvestProvider(IConfigurationSection settings) : base(settings)
+        public TinkoffInvestProviderOld(IConfigurationSection settings) : base(settings)
         {
             var conf = new InvestApiSettings();
             settings.Bind(conf);

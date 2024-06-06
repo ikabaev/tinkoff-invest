@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Invest.Services\Invest.Services.csproj" />
+    <ProjectReference Include="..\Invest.Services.Tinkoff\Invest.Services.Tinkoff.csproj" />
   </ItemGroup>
 
   <ItemGroup>

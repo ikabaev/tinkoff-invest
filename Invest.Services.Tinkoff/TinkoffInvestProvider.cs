@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Tinkoff.InvestApi;
 
-namespace Tinkoff.Invest.Services
+namespace Invest.Services.Tinkoff
 {
     /// <summary>
     /// Предоставляет доступ к Tinkoff Invest
