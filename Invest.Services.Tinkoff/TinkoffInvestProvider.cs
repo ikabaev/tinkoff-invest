@@ -18,7 +18,10 @@ namespace Invest.Services.Tinkoff
         {
             if (section == null)
                 throw new ArgumentException($"Отсутствует конфигурации для {nameof(TinkoffInvestProvider)}");
-            
+
+            //if (configuration == null)
+            //    throw new ArgumentException($"Отсутствует configuration для {nameof(TinkoffInvestProvider)}");
+
             // получаем из конфигурации приложения
             var apiSettings = section.Get<InvestApiSettings>();
 

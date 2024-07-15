@@ -22,6 +22,7 @@ namespace Invest.Services
             if (settings.Assembly == null)
             {
                 var type = Type.GetType(settings.Type) ?? throw new ArgumentNullException(nameof(section));
+                //type.GetConstructors()[0].
                 var instance = Activator.CreateInstance(type, [section]);
 
                 return instance;
@@ -32,6 +33,7 @@ namespace Invest.Services
                 var asm = Assembly.LoadFrom(settings.Assembly);
                 var instance = asm.CreateInstance(settings.Type, true, BindingFlags.CreateInstance, null, args: [section], null, null);
                 
+                //var qqq = asm.GetType(settings.Type).GetConstructors()[0].GetParameters();
                 //var instance = Activator.CreateInstance(settings.Assembly, settings.Type, [section]);
                 return instance;
             }

@@ -7,14 +7,18 @@ using Tinkoff.InvestApi.V1;
 
 namespace Invest.Services
 {
-    public class InvestBackgroundService(ILogger<InvestBackgroundService> logger, IInvestProvider investApi) : BackgroundService
+    public class InvestBackgroundService(ILogger<InvestBackgroundService> logger, IEnumerable<IInvestProvider> investApi) : BackgroundService
     {
         async protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             logger.LogDebug("service {investApi} starting...", nameof(investApi));
             
-            var _invest = investApi as TinkoffInvestProviderOld ?? throw new ArgumentException("investApi is not TinkoffInvestProvider");
-            
+            var invest = investApi.FirstOrDefault();
+
+            //logger.LogDebug("invest {yes} получен", invest == null ? "не": "");
+            Console.WriteLine("invest {0} получен", invest == null ? "не" : "");
+
+            /*
             var stream = _invest.Api.MarketDataStream.MarketDataStream(cancellationToken: stoppingToken);
             // Отправляем запрос в стрим
             await stream.RequestStream.WriteAsync(new MarketDataRequest
@@ -38,8 +42,9 @@ namespace Invest.Services
             {
                 Console.WriteLine(JsonSerializer.Serialize(response));
             }
+            */
 
-            //return Task.CompletedTask;
+            await Task.CompletedTask;
         }
     }
 }

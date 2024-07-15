@@ -15,25 +15,23 @@ var host = builder
         var settings = context.Configuration.Get<AppSettings>() ?? new();
         foreach(var setting in settings.Providers)
         {
-            var investProvider = ProviderFactory.Create(setting) as IInvestProvider;
+            var investProvider = ProviderFactory.Create(setting);
 
             if (investProvider is null)
-                throw new ArgumentNullException(nameof(investProvider));
+                throw new NullReferenceException(nameof(investProvider));
 
-            services
-                .AddSingleton(investProvider)
-                .AddHostedService<InvestBackgroundService>();
-                
-            
-            //.AddInvestApiClient(setting.AppName ?? $"{Guid.NewGuid()}", (_, settings) =>
-                //{
-                //    settings.Sandbox = false;
-                //    settings.AppName = setting.AppName;
-                //    settings.AccessToken = setting.AccessToken;
-                //});
+            var itypes = investProvider.GetType().GetInterfaces();
 
-            //TinkoffInvestAPIServiceExtention.accessToken = setting.AccessToken ?? string.Empty;
+            if (itypes.Length == 0)
+                throw new NullReferenceException($"Тип {investProvider.GetType()} не реализует ни одного интерфейса");
+
+            foreach (var i in itypes)
+                services
+                    .AddSingleton(i, investProvider);
         }
+
+        services
+                .AddHostedService<InvestBackgroundService>();
     })
     .Build();
 
