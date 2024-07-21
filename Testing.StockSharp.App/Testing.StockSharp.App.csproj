@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>5bf90fc0-e359-417d-acab-e2a2fdf7b83f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ecng.Configuration" Version="1.0.175" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="StockSharp.Algo" Version="5.0.189" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="StockSharp.Tinkoff">
+      <HintPath>..\..\..\Users\ikaba\AppData\Local\StockSharp\products\apps_terminal\StockSharp.Tinkoff.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
