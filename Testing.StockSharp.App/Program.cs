@@ -23,9 +23,14 @@ var host = builder
             TraderHelper
                 .AddAdapter<TinkoffMessageAdapter>(connector, adapter =>
                 {
-                    var accessToken = setting["AccessToken"] ?? throw new ArgumentNullException("AccessToken");
-                    adapter.Token = new SecureString();
-                    accessToken.ForEach(x => { adapter.Token.AppendChar(x); });
+                    var accessToken = setting["AccessToken"]?.ToCharArray() ?? throw new SecurityException("AccessToken");
+                    unsafe
+                    {
+                        fixed (char* pointerToFirst = accessToken)
+                            adapter.Token = new SecureString(pointerToFirst, accessToken.Length);
+                    }
+                    
+                    //accessToken.ForEach(x => { adapter.Token.AppendChar(x); });
                     
                 });
         }

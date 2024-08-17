@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Ecng.Configuration" Version="1.0.175" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-    <PackageReference Include="StockSharp.Algo" Version="5.0.189" />
+    <PackageReference Include="StockSharp.Algo" Version="5.0.192" />
   </ItemGroup>
 
   <ItemGroup>
