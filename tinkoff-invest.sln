@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Quotes", "I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invest.Services.Tinkoff", "Invest.Services.Tinkoff\Invest.Services.Tinkoff.csproj", "{A908B7A5-1BB6-49C9-8EFF-3C2AFBE01244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing.StockSharp.App", "Testing.StockSharp.App\Testing.StockSharp.App.csproj", "{1CB5E0A5-D4C9-4373-BF95-388B10A2BBAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing.StockSharp.App", "Testing.StockSharp.App\Testing.StockSharp.App.csproj", "{1CB5E0A5-D4C9-4373-BF95-388B10A2BBAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrams", "Diagrams", "{43277DBE-2BF1-4DCE-BC96-2692CF5DEBBF}"
+	ProjectSection(SolutionItems) = preProject
+		class.drawio = class.drawio
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
