@@ -80,9 +80,10 @@ var quoteBricks = reader
     })
     .SplitIf(list => list.Max(q => q.Value) / list.Min(q => q.Value) - 1 >= .01)
     .Select((b, i) => new {
-        Id = i,
+        Id = i - 1,
         b.Begin,
         b.End,
+        Duration = (b.End.Dttm - b.Begin.Dttm).TotalSeconds,
         Max = b.Max(q => q.Value),
         Min = b.Min(q => q.Value),
         Volume = b.Sum(q => q.Volume),
@@ -90,20 +91,21 @@ var quoteBricks = reader
     })
     .Windowed(2)
     .Select(w => new { 
-        w.Begin.Id,
-        Begin = w.Begin.Begin.Dttm,
-        End = w.Begin.End.Dttm,
-        // направление выхода 
+        w.End.Id,
+        Begin = w.End.Begin.Dttm,
+        End = w.End.End.Dttm,
+        // направление выхода в процентах
         Direction = (w.End.Max / w.Begin.Max - 1) * 100,
-        w.Begin.Volume
+        Duration = w.End.Duration / w.Begin.Duration,
+        Volume = (float)w.End.Volume / w.Begin.Volume,
     })
     .SplitIf(list => list.Count == 1000)
     ;
 
 
 const string sql_bricks = @"INSERT INTO
-    moex.sber_1_brick_1 (id, dttm_begin, dttm_end, direction, volume) 
-    VALUES (@Id, @Begin, @End, @Direction, @Volume)";
+    moex.sber_1_brick_1 (id, begin, ""end"", direction, duration, volume) 
+    VALUES (@Id, @Begin, @End, @Direction, @Duration, @Volume)";
 
 foreach (var bricks in quoteBricks)
 {
